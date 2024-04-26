@@ -28,7 +28,7 @@ public class CandyMapperTest {
             System.out.println("Title test failed");
         }
 
-        WebElement closePopup = driver.findElement(By.id("popup-widget163045-close-icon"));
+        WebElement closePopup = driver.findElement(By.xpath("//a[@data-ux=\"ButtonPrimary\"]"));
         closePopup.click();
         Thread.sleep(1000);
         WebElement joinUs= driver.findElement(By.xpath("//a[@data-page=\"c9e65620-4aec-44b7-bf7e-90a2cb36a1bf\"][1]"));
